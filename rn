@@ -19,10 +19,6 @@ if [ "$1" = "nps" ]; then
 fi
 
 date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
-inlist_fi inlist_2M 2M_near_TAMS.mod
-inlist_fi inlist_3M 3M_near_TAMS.mod
-inlist_fi inlist_4M 4M_near_TAMS.mod
-inlist_fi inlist_5M 5M_near_TAMS.mod
 date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
 
 if [ "$1" = "nps" ]; then
