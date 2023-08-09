@@ -1,0 +1,31 @@
+#!/bin/bash
+
+function inlist_fi {
+	echo "move inlist"
+	mv $1 inlist_change
+	./star
+	echo "rename model"
+	mv final.mod $2
+	mv inlist_change $1
+}
+
+
+rm -f restart_photo
+
+if [ "$1" = "nps" ]; then
+	echo "pgstar_flag=.false."
+	mv inlist inlist_pgstar
+	mv inlist_no_pgstar inlist
+fi
+
+date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
+inlist_fi inlist_2M 2M_near_TAMS.mod
+inlist_fi inlist_3M 3M_near_TAMS.mod
+inlist_fi inlist_4M 4M_near_TAMS.mod
+inlist_fi inlist_5M 5M_near_TAMS.mod
+date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
+
+if [ "$1" = "nps" ]; then
+	mv inlist inlist_no_pgstar
+	mv inlist_pgstar inlist
+fi
