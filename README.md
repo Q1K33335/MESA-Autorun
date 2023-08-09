@@ -1,5 +1,5 @@
-# MESA-Autorun
-# ZH_CN
+## MESA-Autorun
+#### ZH_CN
 MESA-Autorun用于生成不同金属量或不同质量的模型，仅需输入这些参数。
 bash脚本用于运行一些inlist_change，目前还未实现自动编写Bash脚本。
 
@@ -13,8 +13,8 @@ bash脚本用于运行一些inlist_change，目前还未实现自动编写Bash�
 
         &controls
                 cool_wind_RGB_scheme = 'Reimers'
+                cool_wind_AGB_scheme = ''
                 Reimers_scaling_factor = 0.4
-                cool_wind_AGB_scheme = ''\n
 
                 xa_central_lower_limit_species(1) = 'h1'
                 xa_central_lower_limit(1) = 1e-4
