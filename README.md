@@ -7,7 +7,7 @@ bash脚本用于运行一些inlist_change，目前还未实现自动编写Bash�
 
 #### write_inlist.cpp:
 
-编辑write_inlist.cpp中的incom（不完整inlist文件名称，该文件必须只没有（initial_mass或inliial_z）和controls list的结束语），示例不完整inlist文件内容如下图所示
+编辑write_inlist.cpp中的incom（不完整inlist文件名称，该文件必须只没有（initial_mass或initial_z）和controls list的结束语），示例不完整inlist文件内容如下图所示
        
         &star_job
 
